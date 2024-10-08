@@ -1,4 +1,4 @@
-export class User {
+class User {
   constructor(id, name, username, email, password, is_active, created_at) {
     this.id = id;
     this.name = name;
@@ -9,3 +9,5 @@ export class User {
     this.created_at = created_at;
   }
 }
+
+module.exports = User;

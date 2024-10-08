@@ -1,8 +1,8 @@
-import { UserService } from '../../services/UserService.js';
+const UserService = require('../../services/UserService');
 
 const userService = new UserService();
 
-export class UserController {
+class UserController {
   getAllUsers(req, res) {
     const users = userService.getAllUsers();
     res.json(users);
@@ -44,4 +44,4 @@ export class UserController {
   }
 }
 
-export default new UserController();
+module.exports = new UserController();

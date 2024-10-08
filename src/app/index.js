@@ -1,10 +1,9 @@
-import express from 'express';
-import userRoutes from './routes/userRoutes.js';
-
+const express = require('express');
 const app = express();
+const userRoutes = require('./routes/userRoutes');
 
 app.use(express.json());
 
 app.use('/api', userRoutes);
 
-export default app;
+module.exports = app;

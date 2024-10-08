@@ -1,6 +1,6 @@
-import { User } from '../domain/models/User.js';
+const User = require('../domain/models/User');
 
-export class UserService {
+class UserService {
   constructor() {
     this.users = [];
     this.currentId = 1;
@@ -127,3 +127,5 @@ export class UserService {
     return null;
   }
 }
+
+module.exports = UserService;
