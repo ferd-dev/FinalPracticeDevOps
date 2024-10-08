@@ -14,14 +14,18 @@ This project is a simple CRUD API built with Node.js, using Express.js, and foll
 2. Build the Docker image:
 
    ```bash
-   docker build -t ferni21/node-api:latest .
+   docker build -t ferni21/node-api .
    ```
 
 3. Run the Docker container:
    ```bash
-   docker run -p 3000:3000 ferni21/node-api:latest:latest
+   docker run -p 3000:3000 ferni21/node-api
    ```
-4. Visit the API in your browser or Postman:
+4. Visit the API in Postman:
    ```bash
-   http://localhost:3000/api/users
+   |GET|    http://localhost:3000/api/users
+   |GET|    http://localhost:3000/api/users/{id}
+   |POST|   http://localhost:3000/api/users
+   |PUT|    http://localhost:3000/api/users/{id}
+   |DELETE| http://localhost:3000/api/users/{id}
    ```
